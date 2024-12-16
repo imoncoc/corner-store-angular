@@ -103,10 +103,24 @@ body {
 /**************************/
 
 .container {
-  /* 1140px */
-  max-width: 75rem;
-  padding: 0 2rem;
+  max-width: 96rem;
   margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* For smaller screens, you can use media queries to adjust the width and padding: */
+@media (max-width: 768px) {
+  .container {
+    max-width: 72rem;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 54rem;
+    padding: 0 0.5rem;
+  }
 }
 
 .grid {
@@ -303,6 +317,7 @@ body {
 strong {
   font-weight: 500;
 }
+
 
 /**************************/
 /* Query */
