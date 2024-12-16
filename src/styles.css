@@ -57,6 +57,21 @@ Medium: 11px
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
 
+:root {
+  --color-white: #ffffff;
+  --color-mainBlack: #3a3a3a;
+  --color-black: #18191f;
+  /* --primary-color: #e02c6d;
+  --primary-color-tint: #ca2862; */
+  --primary-color: #e67e22;
+  --primary-color-tint: #eb984e;
+  --color-yellow: #fb8200;
+  --color-gray: #787885;
+  --color-rating: #5e6366;
+  --color-footer: #0a0826;
+  --main-box: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
 * {
   padding: 0;
   margin: 0;
