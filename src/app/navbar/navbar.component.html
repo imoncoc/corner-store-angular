@@ -1,0 +1,21 @@
+<header class="header" [ngClass]="{ 'nav-open': isNavLinkOpen }">
+  <img
+    src="https://images.unsplash.com/photo-1620288627223-53302f4e8c74?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    class="logo"
+    alt=""
+  />
+  <nav class="main-nav">
+    <ul class="main-nav-list">
+      <li class="main-nav-link">Section 1</li>
+      <li class="main-nav-link">Section 2</li>
+      <li class="main-nav-link">Section 3</li>
+      <li class="main-nav-link">Section 4</li>
+      <li class="main-nav-link">Section 5</li>
+    </ul>
+  </nav>
+
+  <button class="btn-mobile-nav" (click)="toggleNavLink()">
+    <i class="fa-solid fa-bars icon-mobile-nav" name="menu-outline"></i>
+    <i class="fa-solid fa-xmark icon-mobile-nav" name="close-outline"></i>
+  </button>
+</header>
