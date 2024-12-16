@@ -7,6 +7,11 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
+  showPassword: boolean = false;
+
+  togglePasswordVisibility() {
+    this.showPassword = !this.showPassword;
+  }
   constructor(private title: Title) {}
 
   ngOnInit(): void {

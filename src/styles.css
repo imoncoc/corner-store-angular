@@ -71,6 +71,9 @@ Medium: 11px
   --color-rating: #5e6366;
   --color-footer: #0a0826;
   --main-box: 0px 0px 40px rgba(0, 0, 0, 0.15);
+
+  --color-form: #45260a;
+  --color-form-tint: #583c23;
 }
 
 * {
@@ -158,6 +161,10 @@ body {
 
 .grid--center-v {
   align-items: center;
+}
+
+.primary-color {
+  color: var(--primary-color);
 }
 
 .heading-primary,
@@ -265,15 +272,15 @@ body {
 }
 
 .btn--form {
-  background-color: #45260a;
+  background-color: var(--color-form);
   color: #fdf2e9;
   align-self: end;
   padding: 0.75rem;
 }
 
 .btn--form:hover {
-  background-color: #fff;
-  color: #555;
+  background-color: var(--color-form-tint);
+  /* color: #555; */
 }
 
 .link:link,
