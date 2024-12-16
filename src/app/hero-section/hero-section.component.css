@@ -86,22 +86,3 @@
 .btn-journey:active {
   background-color: var(--primary-color-tint);
 }
-
-
-
-.btn-primary {
-  background-color: var(--primary-color);
-  color: #fff;
-  font-weight: 700;
-  font-size: 20px;
-  border: 0;
-  padding: 12px 24px;
-  height: 48px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.btn-primary:hover,
-.btn-primary:active {
-  background-color: var(--primary-color-tint);
-}

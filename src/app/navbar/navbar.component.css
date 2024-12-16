@@ -16,11 +16,13 @@
   align-items: center;
   gap: 8px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .header-title {
   font-size: 20px;
   font-weight: 600;
+
 }
 
 .header-title-color {
@@ -52,6 +54,10 @@
 
 .main-nav-link:hover,
 .main-nav-link:active {
+  color: #cf711f;
+}
+
+.active {
   color: #cf711f;
 }
 

@@ -65,6 +65,7 @@ Medium: 11px
   --primary-color-tint: #ca2862; */
   --primary-color: #e67e22;
   --primary-color-tint: #eb984e;
+  --primary-color-fade: #fdf2e9;
   --color-yellow: #fb8200;
   --color-gray: #787885;
   --color-rating: #5e6366;
@@ -216,6 +217,24 @@ body {
   /* Put transition on original "state" */
   /* transition: background-color 0.3s; */
   transition: all 0.3s;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  border: 0;
+  padding: 12px 24px;
+  height: 48px;
+  border-radius: 5px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: var(--primary-color-tint);
 }
 
 .btn--full:link,
