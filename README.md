@@ -25,3 +25,71 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+Folder structure ->
+
+src/
+│
+├── app/
+│ ├── core/ # Core module for singleton services, guards, and interceptors
+│ │ ├── guards/
+│ │ │ └── auth.guard.ts # AuthGuard for route protection
+│ │ ├── services/
+│ │ │ ├── auth.service.ts # Service for authentication logic
+│ │ │ ├── user.service.ts # Service for user data management
+│ │ ├── interceptors/
+│ │ │ └── auth.interceptor.ts # HTTP interceptor to attach tokens
+│ │ └── core.module.ts # Core module
+│ │
+│ ├── shared/ # Shared module for reusable components, pipes, and directives
+│ │ ├── components/
+│ │ │ ├── footer/
+│ │ │ │ └── footer.component.ts
+│ │ │ ├── navbar/
+│ │ │ │ └── navbar.component.ts
+│ │ │ └── hero-section/
+│ │ │ └── hero-section.component.ts
+│ │ ├── pipes/ # Custom pipes
+│ │ ├── directives/ # Custom directives
+│ │ └── shared.module.ts # Shared module declaration
+│ │
+│ ├── auth/ # Authentication module
+│ │ ├── login/
+│ │ │ ├── login.component.ts
+│ │ │ ├── login.component.html
+│ │ ├── register/
+│ │ │ ├── register.component.ts
+│ │ │ ├── register.component.html
+│ │ └── auth-routing.module.ts # Routing for auth module
+│ │
+│ ├── products/ # Lazy-loaded Products module
+│ │ ├── components/ # Components specific to products
+│ │ │ ├── product-list/
+│ │ │ │ └── product-list.component.ts
+│ │ │ ├── product-details/
+│ │ │ └── product-details.component.ts
+│ │ ├── services/ # Product-related services
+│ │ │ └── product.service.ts
+│ │ ├── interfaces/ # Interfaces for products
+│ │ │ └── product.interface.ts
+│ │ ├── products-routing.module.ts
+│ │ └── products.module.ts
+│ │
+│ ├── error/ # Error pages module
+│ │ ├── error-page/
+│ │ │ ├── error-page.component.ts
+│ │ │ ├── error-page.component.html
+│ │ └── error-routing.module.ts # Routing for error pages
+│ │
+│ ├── app-routing.module.ts # Main routing module
+│ ├── app.component.ts # Root component
+│ └── app.module.ts # Root module
+│
+├── assets/ # Static assets (images, fonts, etc.)
+│
+├── environments/ # Environment-specific configurations
+│ ├── environment.ts # Development environment
+│ └── environment.prod.ts # Production environment
+│
+└── styles/ # Global styles
+├── styles.scss # Main global stylesheet

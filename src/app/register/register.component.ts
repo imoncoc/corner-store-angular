@@ -1,15 +1,25 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
-  styleUrls: ['./register.component.css']
+  styleUrls: ['./register.component.css'],
 })
 export class RegisterComponent implements OnInit {
+  showPassword: boolean = false;
+  showConfirmPassword: boolean = false;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  togglePasswordVisibility() {
+    this.showPassword = !this.showPassword;
+  }
+  toggleConfirmPasswordVisibility() {
+    this.showConfirmPassword = !this.showConfirmPassword;
   }
 
+  constructor(private title: Title) {}
+
+  ngOnInit(): void {
+    this.title.setTitle('Quick Mart | Signup');
+  }
 }
